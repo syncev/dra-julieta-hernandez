@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const whatsappLink = "https://wa.me/5491112345678?text=Hola%2C%20me%20gustaría%20agendar%20una%20consulta";
+  const whatsappLink = "https://wa.me/2616956909?text=Hola%2C%20me%20gustaría%20agendar%20una%20consulta";
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <div className="flex items-center gap-2">
             <span className="font-display text-xl lg:text-2xl font-semibold text-primary">
-              Dra. María González
+              Dra. Julieta Hernández
             </span>
           </div>
 

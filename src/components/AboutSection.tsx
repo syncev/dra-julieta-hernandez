@@ -6,12 +6,12 @@ const AboutSection = () => {
     {
       icon: GraduationCap,
       title: "Formación Académica",
-      description: "Médica especialista en Psiquiatría - Universidad de Buenos Aires"
+      description: "Medicina - Universidad del Aconcagua"
     },
     {
       icon: Stethoscope,
       title: "Especialización",
-      description: "Posgrado en Psicofarmacología Clínica"
+      description: "Psiquiatria - Hospital El Carmen"
     },
     {
       icon: Users,
@@ -34,7 +34,7 @@ const AboutSection = () => {
             <div className="absolute -top-4 -right-4 w-full h-full bg-secondary rounded-3xl"></div>
             <img
               src={officeImage}
-              alt="Consultorio de la Dra. María González"
+              alt="Consultorio de la Dra. Julieta Hernández"
               className="relative rounded-3xl shadow-card w-full object-cover aspect-square"
             />
           </div>
@@ -48,7 +48,7 @@ const AboutSection = () => {
               Comprometida con tu salud mental
             </h2>
             <p className="font-body text-lg text-muted-foreground leading-relaxed mb-8">
-              Soy la Dra. María González, psiquiatra con más de 15 años de experiencia acompañando a personas en su camino hacia el bienestar emocional. Mi enfoque combina la medicina basada en evidencia con una mirada humanista, entendiendo que cada persona es única.
+              Soy la Dra. Julieta Hernández, psiquiatra con más de 7 años de experiencia acompañando a personas en su camino hacia el bienestar emocional. Mi enfoque combina la medicina basada en evidencia con una mirada humanista, entendiendo que cada persona es única.
             </p>
             <p className="font-body text-lg text-muted-foreground leading-relaxed mb-10">
               Creo firmemente en la importancia de crear un espacio de confianza donde puedas expresarte libremente. Juntos trabajaremos para encontrar las mejores estrategias para tu situación particular.

@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Award, Clock, Heart } from "lucide-react";
-import heroImage from "@/assets/hero-psychiatrist.jpg";
+import heroImage from "@/assets/Dra-Julieta-Hernandez.jpg";
 
 const HeroSection = () => {
-  const whatsappLink = "https://wa.me/5491112345678?text=Hola%2C%20me%20gustaría%20agendar%20una%20consulta";
+  const whatsappLink = "https://wa.me/2616956909?text=Hola%2C%20me%20gustaría%20agendar%20una%20consulta";
 
   return (
     <section id="inicio" className="min-h-screen pt-20 lg:pt-0 bg-gradient-hero relative overflow-hidden">
@@ -14,7 +14,7 @@ const HeroSection = () => {
             <div className="inline-flex items-center gap-2 bg-secondary/80 rounded-full px-4 py-2 mb-6">
               <Award className="w-4 h-4 text-primary" />
               <span className="text-sm font-body text-secondary-foreground">
-                +15 años de experiencia
+                +7 años de experiencia
               </span>
             </div>
             
@@ -40,7 +40,7 @@ const HeroSection = () => {
             </div>
 
             {/* Trust Indicators */}
-            <div className="grid grid-cols-3 gap-4 lg:gap-8">
+            {/* <div className="grid grid-cols-3 gap-4 lg:gap-8">
               <div className="text-center lg:text-left">
                 <div className="flex items-center justify-center lg:justify-start gap-2 mb-1">
                   <Clock className="w-4 h-4 text-primary" />
@@ -58,11 +58,11 @@ const HeroSection = () => {
               <div className="text-center lg:text-left">
                 <div className="flex items-center justify-center lg:justify-start gap-2 mb-1">
                   <Award className="w-4 h-4 text-primary" />
-                  <span className="font-display text-2xl lg:text-3xl font-semibold text-foreground">15+</span>
+                  <span className="font-display text-2xl lg:text-3xl font-semibold text-foreground">7+</span>
                 </div>
                 <span className="font-body text-sm text-muted-foreground">Años de experiencia</span>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Image */}
@@ -71,7 +71,7 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-primary/10 rounded-3xl transform rotate-3"></div>
               <img
                 src={heroImage}
-                alt="Dra. María González - Psiquiatra"
+                alt="Dra. Julieta Hernandez - Psiquiatra"
                 className="relative rounded-3xl shadow-card w-full max-w-md lg:max-w-lg object-cover aspect-[4/5]"
               />
               <div className="absolute -bottom-4 -left-4 bg-card rounded-2xl p-4 shadow-card">

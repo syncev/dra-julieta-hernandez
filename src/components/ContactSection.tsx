@@ -2,14 +2,14 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, MapPin, Clock, Phone, Mail } from "lucide-react";
 
 const ContactSection = () => {
-  const whatsappLink = "https://wa.me/5491112345678?text=Hola%2C%20me%20gustaría%20agendar%20una%20consulta";
+  const whatsappLink = "https://wa.me/2616956909?text=Hola%2C%20me%20gustaría%20agendar%20una%20consulta";
 
   const contactInfo = [
     {
       icon: MapPin,
       title: "Ubicación",
-      details: "Av. Libertador 1234, Piso 5",
-      subDetails: "Palermo, Buenos Aires"
+      details: "Av España 934 PB 1",
+      subDetails: "Ciudad de Mendoza"
     },
     {
       icon: Clock,
@@ -20,13 +20,13 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Teléfono",
-      details: "+54 11 1234-5678",
+      details: "+54 261 695 6909",
       subDetails: "WhatsApp disponible"
     },
     {
       icon: Mail,
       title: "Email",
-      details: "dra.gonzalez@email.com",
+      details: "julietaher96@gmail.com ",
       subDetails: "Respuesta en 24hs"
     }
   ];

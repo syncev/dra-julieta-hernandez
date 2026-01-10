@@ -1,7 +1,7 @@
 import { Heart, MessageCircle } from "lucide-react";
 
 const Footer = () => {
-  const whatsappLink = "https://wa.me/5491112345678?text=Hola%2C%20me%20gustaría%20agendar%20una%20consulta";
+  const whatsappLink = "https://wa.me/2616956909?text=Hola%2C%20me%20gustaría%20agendar%20una%20consulta";
   const currentYear = new Date().getFullYear();
 
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <span className="font-display text-xl font-semibold text-background">
-              Dra. María González
+              Dra. Julieta Hernández
             </span>
             <p className="font-body text-sm text-background/60 mt-1">
               Médica Psiquiatra | MN 123456
@@ -45,7 +45,7 @@ const Footer = () => {
 
         <div className="border-t border-background/10 mt-8 pt-8">
           <p className="font-body text-sm text-background/50 text-center flex items-center justify-center gap-1">
-            © {currentYear} Dra. María González. Hecho con <Heart className="w-4 h-4 text-accent" /> para tu bienestar.
+            © {currentYear} Dra. Julieta Hernández. Hecho con <Heart className="w-4 h-4 text-accent" /> para tu bienestar.
           </p>
         </div>
       </div>
