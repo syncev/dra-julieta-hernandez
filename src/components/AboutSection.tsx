@@ -1,5 +1,5 @@
 import { GraduationCap, Users, ShieldCheck, Stethoscope } from "lucide-react";
-import officeImage from "@/assets/Dra-julieta-Hernandez2.jpg";
+import officeImage from "@/assets/Dra-Julieta-Hernandez2.jpg";
 
 const AboutSection = () => {
   const credentials = [
