@@ -13,7 +13,7 @@ const Footer = () => {
               Dra. Julieta Hernández
             </span>
             <p className="font-body text-sm text-background/60 mt-1">
-              Médica Psiquiatra 
+              Médica Psiquiatra | +54 261 695 6909 | julietaher96@gmail.com
             </p>
           </div>
 
