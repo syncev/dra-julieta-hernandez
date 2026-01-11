@@ -28,19 +28,19 @@ const AboutSection = () => {
   return (
     <section id="sobre-mi" className="py-20 lg:py-32 bg-card">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid lg:grid-cols-3 gap-12 lg:gap-20 items-center">
           {/* Image */}
           <div className="relative">
             <div className="absolute -top-4 -right-4 w-full h-full bg-secondary rounded-3xl"></div>
             <img
               src={officeImage}
               alt="Consultorio de la Dra. Julieta Hernández"
-              className="relative rounded-3xl shadow-card w-full object-cover aspect-[4/3]"
+              className="relative rounded-3xl shadow-card w-full object-cover aspect-[4/4]"
             />
           </div>
 
           {/* Content */}
-          <div>
+          <div className="lg:col-span-2">
             <span className="inline-block font-body text-sm font-medium text-primary uppercase tracking-wider mb-4">
               Sobre Mí
             </span>
