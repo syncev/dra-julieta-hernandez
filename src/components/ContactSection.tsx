@@ -9,7 +9,8 @@ const ContactSection = () => {
       icon: MapPin,
       title: "Ubicación",
       details: "Av España 934 PB 1",
-      subDetails: "Ciudad de Mendoza"
+      subDetails: "Ciudad de Mendoza",
+      link: "https://www.google.com/maps/search/?api=1&query=Av+España+934,+Ciudad+de+Mendoza"
     },
     {
       icon: Clock,
@@ -65,25 +66,47 @@ const ContactSection = () => {
 
           {/* Contact Info */}
           <div className="grid sm:grid-cols-2 gap-6">
-            {contactInfo.map((info, index) => (
-              <div 
-                key={index}
-                className="bg-card rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300"
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
-                  <info.icon className="w-6 h-6 text-primary" />
+            {contactInfo.map((info, index) => {
+              const content = (
+                <>
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                    <info.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="font-body font-semibold text-foreground mb-2">
+                    {info.title}
+                  </h3>
+                  <p className="font-body text-foreground">
+                    {info.details}
+                  </p>
+                  <p className="font-body text-sm text-muted-foreground">
+                    {info.subDetails}
+                  </p>
+                </>
+              );
+
+              if (info.link) {
+                return (
+                  <a
+                    key={index}
+                    href={info.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-card rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300 block text-left"
+                  >
+                    {content}
+                  </a>
+                );
+              }
+
+              return (
+                <div 
+                  key={index}
+                  className="bg-card rounded-2xl p-6 shadow-soft hover:shadow-card transition-all duration-300"
+                >
+                  {content}
                 </div>
-                <h3 className="font-body font-semibold text-foreground mb-2">
-                  {info.title}
-                </h3>
-                <p className="font-body text-foreground">
-                  {info.details}
-                </p>
-                <p className="font-body text-sm text-muted-foreground">
-                  {info.subDetails}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
