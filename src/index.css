@@ -24,7 +24,7 @@
     --muted: 40 20% 94%;
     --muted-foreground: 200 15% 45%;
 
-    --accent: 285 50% 60%;
+    --accent: 175 43% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -39,8 +39,8 @@
     /* Custom tokens */
     --teal-light: 210 40% 96%;
     --teal-medium: 210 40% 45%;
-    --coral: 285 50% 75%;
-    --coral-hover: 285 50% 70%;
+    --mint: 175 43% 76%;
+    --mint-hover: 175 43% 71%;
     --cream: 40 33% 96%;
     --sage: 150 20% 90%;
 
@@ -51,7 +51,7 @@
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(180 35% 35% / 0.1);
     --shadow-card: 0 8px 30px -8px hsl(180 35% 35% / 0.12);
-    --shadow-glow: 0 0 40px hsl(285 50% 75% / 0.3);
+    --shadow-glow: 0 0 40px hsl(175 43% 76% / 0.3);
 
     /* Gradients */
     --gradient-hero: linear-gradient(
@@ -94,7 +94,7 @@
     --muted: 200 20% 18%;
     --muted-foreground: 200 15% 60%;
 
-    --accent: 285 50% 75%;
+    --accent: 175 43% 76%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
