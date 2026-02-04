@@ -1,9 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Award, Clock, Heart } from "lucide-react";
-import heroImage from "@/assets/office-calm.jpg";
+import officePresencial from "@/assets/office-presencial.jpg";
+import officeRemote from "@/assets/office-remote.jpg";
+import { useState, useEffect } from "react";
 
 const HeroSection = () => {
   const whatsappLink = "https://wa.me/2616956909?text=Hola%2C%20me%20gustaría%20agendar%20una%20consulta";
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev === 0 ? 1 : 0));
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section id="inicio" className="min-h-screen pt-20 lg:pt-0 bg-gradient-hero relative overflow-hidden">
@@ -71,14 +82,27 @@ const HeroSection = () => {
 
           {/* Image */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="relative">
+            <div className="relative w-full max-w-md lg:max-w-lg aspect-[4/4]">
               <div className="absolute inset-0 bg-primary/10 rounded-3xl transform rotate-3"></div>
-              <img
-                src={heroImage}
-                alt="Dra. Julieta Hernandez - Psiquiatra"
-                className="relative rounded-3xl shadow-card w-full max-w-md lg:max-w-lg aspect-[4/4] object-cover"
-              />
-              <div className="absolute -bottom-4 -left-4 bg-card rounded-2xl p-4 shadow-card">
+              
+              <div className="relative w-full h-full rounded-3xl shadow-card overflow-hidden">
+                <img
+                  src={officePresencial}
+                  alt="Consultorio psiquiátrico presencial"
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+                    currentImage === 0 ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+                <img
+                  src={officeRemote}
+                  alt="Consultorio psiquiátrico virtual"
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
+                    currentImage === 1 ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              </div>
+
+              <div className="absolute -bottom-4 -left-4 bg-card rounded-2xl p-4 shadow-card z-10">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
                     <MessageCircle className="w-6 h-6 text-accent" />
